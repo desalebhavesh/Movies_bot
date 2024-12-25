@@ -11,6 +11,11 @@ nltk.download('omw-1.4')
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model  # type: ignore
 
+uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+if uploaded_file is not None:
+    st.image(uploaded_file)
+
+
 # Import your sections
 
 from home import home_section   # Assuming home.py is present
