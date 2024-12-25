@@ -16,16 +16,7 @@ def chat_with_bot():
 def home_section():
     col1, col2 = st.columns([1, 3])
 
-    # Define the image path using a raw string
-    image_path('bot_image.jpg')   # Use raw string
-    
-
-    # Add an image in the first column
-    with col1:
-        if os.path.exists(image_path):
-            st.image(image_path, use_container_width=250)
-        else:
-            st.error("Image file not found. Please check the path.")
+   
 
     # Add the title in the second column
     with col2:
