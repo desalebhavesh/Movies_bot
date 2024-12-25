@@ -11,6 +11,8 @@ nltk.download('omw-1.4')
 from nltk.stem import WordNetLemmatizer
 from keras.models import load_model  # type: ignore
 
+st.write("Image path: D:\chat_bot\bot_image.jpg")
+
 
 
 # Import your sections
