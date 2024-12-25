@@ -13,7 +13,7 @@ from keras.models import load_model  # type: ignore
 
 
  # Define the image path using a raw string
-    image_path('bot_image.jpg')   # Use raw string
+    image_path = 'bot_image.jpg'   # Use raw string
     
 
     # Add an image in the first column
