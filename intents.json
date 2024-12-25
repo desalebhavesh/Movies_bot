@@ -1,0 +1,391 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi there", "Hello", "Hey", "Hi", "Good morning", "Good evening"],
+        "responses": ["Hello! How can I assist you with movies today?", "Hi there! What movie are you looking for?", "Hey! Ready to explore some movies?"],
+        "context": [""]
+      },
+      {
+        "tag": "greeting_1",
+        "patterns": ["Hello", "Hi", "Good afternoon", "Greetings", "Hey there"],
+        "responses": ["Hi! How can I help you find your next favorite movie?", "Hello! Ready for some movie magic?", "Greetings! Let’s dive into the world of films."]
+      },
+      {
+        "tag": "greeting_2",
+        "patterns": ["Hi there", "Hello!", "Howdy", "Good day", "Hi!"],
+        "responses": ["Hello there! What kind of movie are you in the mood for?", "Hi! Let’s explore some great films together!", "Howdy! How can I assist your movie quest today?"]
+      },
+      {
+        "tag": "greeting_3",
+        "patterns": ["What's up", "Yo", "Hi!", "Hello again", "Hey!"],
+        "responses": ["Hey! What can I help you with today?", "Yo! Let’s discover some amazing movies.", "What’s up? Ready for some cinematic adventures?"]
+      },
+      {
+        "tag": "greeting_4",
+        "patterns": ["Good evening", "Good morning", "Hello there", "Welcome", "Hi again"],
+        "responses": ["Good day! Let’s talk movies.", "Welcome! How can I make your movie search easier?", "Hello again! Found any new favorites lately?"]
+      },
+      {
+        "tag": "thank_you_1",
+        "patterns": ["Thank you", "Thanks a lot", "Much appreciated", "Thanks", "Thanks so much"],
+        "responses": ["You’re welcome! Hope you enjoy your movies.", "Anytime! Let me know if you need more suggestions.", "Happy to help! See you next time."]
+      },
+      {
+        "tag": "thank_you_2",
+        "patterns": ["Thank you so much", "Many thanks", "Big thanks", "Thank you again", "Appreciate it"],
+        "responses": ["You’re welcome! Have a great movie night!", "Glad to help! Come back for more recommendations.", "Always happy to assist! Enjoy your film."]
+      },
+      {
+        "tag": "thank_you_3",
+        "patterns": ["Thanks again", "Thanks!", "Cheers", "Grateful", "Appreciate your help"],
+        "responses": ["No problem at all! See you soon.", "My pleasure! Have fun watching.", "Glad I could help! Take care."]
+      },
+      {
+        "tag": "thank_you_4",
+        "patterns": ["Thanks a ton", "Thank you kindly", "So thankful", "Big thanks to you", "Thanks"],
+        "responses": ["Anytime! Let me know when you need movie magic again.", "You're welcome! Enjoy your cinematic adventure.", "Happy watching! See you soon."]
+      },
+      {
+        "tag": "greeting_5",
+        "patterns": ["Hi!", "Hello again", "Hey there", "Hi friend", "Hello!"],
+        "responses": ["Hello! How can I enhance your movie experience today?", "Hey! Let’s find something awesome to watch.", "Hi there! What kind of movie are you into?"]
+      },
+      {
+        "tag": "thank_you_5",
+        "patterns": ["Many thanks", "Thanks much", "Thank you kindly", "Thanks for your help", "Appreciate it"],
+        "responses": ["You're welcome! Have an amazing movie session.", "No problem! Let’s chat again soon.", "Glad I could help. Take care!"]
+      },
+      {
+        "tag": "greeting_6",
+        "patterns": ["Greetings", "Welcome back", "Hi there", "Hello friend", "Hey"],
+        "responses": ["Welcome back! Found any great movies recently?", "Hey there! What’s on your movie list today?", "Hi! Ready for more recommendations?"]
+      },
+      {
+        "tag": "thank_you_6",
+        "patterns": ["Thanks a bunch", "Thank you very much", "So grateful", "Thank you, buddy", "Appreciate your assistance"],
+        "responses": ["You're welcome! Enjoy the show.", "No worries! Come back anytime.", "Glad to help! Happy watching."]
+      },
+      
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later", "Catch you later", "I’m leaving"],
+        "responses": ["Goodbye! Hope to assist you with movies again soon.", "See you later!", "Take care!"],
+        "context": [""]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "Thanks a lot", "Much appreciated", "I’m grateful"],
+        "responses": ["You're welcome!", "Happy to help!", "Anytime!"],
+        "context": [""]
+      },
+      {
+        "tag": "search_movie",
+        "patterns": ["Search for a movie", "Find a movie", "Look up a movie", "Can you find a movie for me?", "Help me locate a movie"],
+        "responses": ["Sure! Please provide the movie name.", "What movie would you like to search for?"],
+        "context": ["movie_search"]
+      },
+      {
+        "tag": "movie_details",
+        "patterns": ["Tell me about {movie_name}", "Details for {movie_name}", "Information on {movie_name}", "What's the plot of {movie_name}?"],
+        "responses": ["Here are the details for {movie_name}:", "{movie_name} is a must-watch!"],
+        "context": ["movie_info"]
+      },
+      {
+        "tag": "movie_year",
+        "patterns": ["Movies from {year}", "Show me movies released in {year}", "Find movies from the year {year}", "List movies from {year}"],
+        "responses": ["Here are some movies released in {year}: \n- Inception (2010)\n- The Dark Knight (2008)\n- Parasite (2019)"],
+        "context": ["movie_year"]
+      },
+      {
+        "tag": "movie_actor",
+        "patterns": ["Movies by {actor}", "Show me movies featuring {actor}", "Find movies with {actor}", "List movies with {actor} in them"],
+        "responses": ["Here are some movies featuring {actor}: \n- Iron Man (Robert Downey Jr.)\n- Mission Impossible (Tom Cruise)\n- Joker (Joaquin Phoenix)"],
+        "context": ["movie_actor"]
+      },
+      {
+        "tag": "movie_genre",
+        "patterns": ["Show me action movies", "Find romance movies", "List horror films", "Can you recommend comedy movies?", "Suggest thriller movies"],
+        "responses": ["Here are some {genre} movies: \n- Action: Mad Max: Fury Road\n- Romance: The Notebook\n- Horror: Get Out"],
+        "context": ["movie_genre"]
+      },
+      {
+        "tag": "hollywood_movies",
+        "patterns": ["Hollywood movies", "List some Hollywood movies", "Show me Hollywood films", "Popular Hollywood movies"],
+        "responses": ["Here are some popular Hollywood movies: \n- Avengers: Endgame\n- Titanic\n- The Matrix"],
+        "context": ["hollywood"]
+      },
+      {
+        "tag": "bollywood_movies",
+        "patterns": ["Bollywood movies", "List some Bollywood movies", "Show me Bollywood films", "Popular Bollywood movies"],
+        "responses": ["Here are some popular Bollywood movies: \n- Dangal\n- 3 Idiots\n- Bajrangi Bhaijaan"],
+        "context": ["bollywood"]
+      },
+      {
+        "tag": "south_indian_movies",
+        "patterns": ["South Indian movies", "List some South Indian movies", "Show me South Indian films", "Popular South Indian movies"],
+        "responses": ["Here are some popular South Indian movies: \n- Baahubali\n- RRR\n- Pushpa"],
+        "context": ["south_indian"]
+      },
+      {
+        "tag": "korean_movies",
+        "patterns": ["Korean movies", "List some Korean movies", "Show me Korean films", "Popular Korean movies"],
+        "responses": ["Here are some popular Korean movies: \n- Parasite\n- Train to Busan\n- Oldboy"],
+        "context": ["korean"]
+      },
+      {
+        "tag": "trending_movies",
+        "patterns": ["Trending movies", "What are the top trending movies?", "List the trending movies now", "Show me the hottest movies today"],
+        "responses": ["Here are the top trending movies right now: \n- Oppenheimer\n- Barbie\n- The Marvels"],
+        "context": ["trending"]
+      },
+      {
+        "tag": "movie_director",
+        "patterns": ["Movies directed by {director}", "List films by {director}", "What movies has {director} made?"],
+        "responses": ["Here are some movies directed by {director}: \n- Interstellar (Christopher Nolan)\n- Pulp Fiction (Quentin Tarantino)\n- Schindler's List (Steven Spielberg)"],
+        "context": ["movie_director"]
+      },
+      {
+        "tag": "upcoming_movies",
+        "patterns": ["What are the upcoming movies?", "Tell me about new movie releases", "Any movies coming out soon?"],
+        "responses": ["Here are some upcoming movies: \n- Dune: Part Two\n- The Batman 2\n- Avatar 3"],
+        "context": ["upcoming"]
+      },
+      
+        {
+            "tag": "award_winning_movies",
+            "patterns": ["Award-winning movies", "Show me Oscar winners", "Which movies have won awards recently?"],
+            "responses": ["Here are some award-winning movies: \n- Everything Everywhere All At Once\n- The Shape of Water\n- Nomadland"],
+            "context": ["award_winners"]
+        },
+        {
+            "tag": "popular_movies",
+            "patterns": ["What are the most popular movies?", "Trending movies", "Top movies right now"],
+            "responses": ["Some popular movies currently are: \n- Avatar: The Way of Water\n- Dune\n- Spider-Man: No Way Home"],
+            "context": ["popular"]
+        },
+        {
+            "tag": "top_actors",
+            "patterns": ["Who are the top actors?", "Famous movie stars", "Best actors right now"],
+            "responses": ["Some top actors currently are: \n- Timothée Chalamet\n- Florence Pugh\n- Zendaya"],
+            "context": ["actors"]
+        },
+        {
+            "tag": "family_movies",
+            "patterns": ["Family-friendly movies", "Good movies for kids", "What are some family movies?"],
+            "responses": ["Here are some great family-friendly movies: \n- Encanto\n- Luca\n- Coco"],
+            "context": ["family"]
+        },
+        {
+            "tag": "horror_movies",
+            "patterns": ["Scary movies", "Best horror films", "Show me some horror movies"],
+            "responses": ["Here are some popular horror movies: \n- Hereditary\n- The Conjuring\n- A Quiet Place"],
+            "context": ["horror"]
+        },
+        {
+            "tag": "action_movies",
+            "patterns": ["Action-packed movies", "Best action films", "What are good action movies?"],
+            "responses": ["Here are some thrilling action movies: \n- Mad Max: Fury Road\n- John Wick\n- The Dark Knight"],
+            "context": ["action"]
+        },
+        {
+            "tag": "romantic_movies",
+            "patterns": ["Romantic movies", "Best love stories", "Top romantic films"],
+            "responses": ["Here are some romantic movies to watch: \n- La La Land\n- The Notebook\n- Pride and Prejudice"],
+            "context": ["romance"]
+        },
+        {
+            "tag": "comedy_movies",
+            "patterns": ["Funny movies", "Best comedies", "Recommend comedy films"],
+            "responses": ["Here are some hilarious movies: \n- Superbad\n- The Grand Budapest Hotel\n- Knives Out"],
+            "context": ["comedy"]
+        },
+        {
+            "tag": "thriller_movies",
+            "patterns": ["Thrilling movies", "Best thrillers", "Suspenseful films to watch"],
+            "responses": ["Some edge-of-your-seat thrillers are: \n- Gone Girl\n- Parasite\n- Seven"],
+            "context": ["thriller"]
+        },
+        {
+            "tag": "sci_fi_movies",
+            "patterns": ["Science fiction movies", "Top sci-fi films", "What are some good sci-fi movies?"],
+            "responses": ["Explore these sci-fi movies: \n- Blade Runner 2049\n- Interstellar\n- The Martian"],
+            "context": ["sci_fi"]
+        },
+        {
+            "tag": "classic_movies",
+            "patterns": ["Classic movies", "Old but gold films", "What are some timeless movies?"],
+            "responses": ["Here are some classic movies: \n- Casablanca\n- Gone with the Wind\n- The Godfather"],
+            "context": ["classic"]
+        },
+        {
+            "tag": "animation_movies",
+            "patterns": ["Animated movies", "Best animation films", "What are some animated movies?"],
+            "responses": ["Enjoy these animated films: \n- Toy Story\n- Spirited Away\n- The Lion King"],
+            "context": ["animation"]
+        },
+        {
+            "tag": "biographical_movies",
+            "patterns": ["Biographies", "True story films", "What are some biographical movies?"],
+            "responses": ["Check out these biographical movies: \n- Bohemian Rhapsody\n- The Social Network\n- Lincoln"],
+            "context": ["biography"]
+        },
+        {
+            "tag": "musical_movies",
+            "patterns": ["Musical films", "Best musicals", "Movies with great music"],
+            "responses": ["Here are some musical films: \n- Les Misérables\n- Moulin Rouge!\n- The Sound of Music"],
+            "context": ["musical"]
+        },
+        {
+            "tag": "superhero_movies",
+            "patterns": ["Superhero movies", "Best superhero films", "What are some superhero movies?"],
+            "responses": ["Here are some superhero blockbusters: \n- Avengers: Endgame\n- The Dark Knight\n- Black Panther"],
+            "context": ["superhero"]
+        },
+        {
+            "tag": "mystery_movies",
+            "patterns": ["Mystery films", "Best whodunits", "Top mystery movies"],
+            "responses": ["Solve the puzzle with these movies: \n- Knives Out\n- The Girl with the Dragon Tattoo\n- Shutter Island"],
+            "context": ["mystery"]
+        },
+        {
+            "tag": "independent_movies",
+            "patterns": ["Indie films", "Best independent movies", "Good low-budget films"],
+            "responses": ["Discover these indie gems: \n- Lady Bird\n- Moonlight\n- The Florida Project"],
+            "context": ["indie"]
+        },
+        {
+            "tag": "holiday_movies",
+            "patterns": ["Holiday films", "Movies for Christmas", "What are good holiday movies?"],
+            "responses": ["Celebrate with these holiday movies: \n- Home Alone\n- Elf\n- Love Actually"],
+            "context": ["holiday"]
+        },
+        {
+            "tag": "documentary_movies",
+            "patterns": ["Documentaries", "Best documentary films", "What are some good documentaries?"],
+            "responses": ["Learn something new with these documentaries: \n- The Last Dance\n- My Octopus Teacher\n- Free Solo"],
+            "context": ["documentary"]
+        },
+        {
+            "tag": "movie_releases",
+            "patterns": ["New movie releases", "Recent films", "What movies have come out recently?"],
+            "responses": ["Here are some recent releases: \n- The Marvels\n- Dune: Part Two\n- Wonka"],
+            "context": ["new_releases"]
+        },
+        {
+            "tag": "underrated_movies",
+            "patterns": ["Underrated movies", "Hidden gems", "What are some lesser-known films?"],
+            "responses": ["Check out these underrated movies: \n- The Perks of Being a Wallflower\n- Sing Street\n- Columbus"],
+            "context": ["underrated"]
+        },
+        {
+            "tag": "kids_movies",
+            "patterns": ["Movies for kids", "Best children films", "What are good movies for children?"],
+            "responses": ["These movies are perfect for kids: \n- Frozen\n- Moana\n- The Secret Life of Pets"],
+            "context": ["kids"]
+        },
+        {
+            "tag": "foreign_movies",
+            "patterns": ["Foreign films", "Best international movies", "What are some good foreign films?"],
+            "responses": ["Explore world cinema with these films: \n- Parasite (South Korea)\n- Amélie (France)\n- Roma (Mexico)"],
+            "context": ["foreign"]
+        },
+        {
+            "tag": "fantasy_movies",
+            "patterns": ["Fantasy films", "Best magical movies", "What are some good fantasy films?"],
+            "responses": ["Here are some enchanting fantasy movies: \n- Harry Potter Series\n- The Lord of the Rings\n- Pan's Labyrinth"],
+            "context": ["fantasy"]
+        },
+        {
+            "tag": "sports_movies",
+            "patterns": ["Sports films", "Best sports movies", "Movies about sports"],
+            "responses": ["Get inspired with these sports movies: \n- Rocky\n- Remember the Titans\n- Moneyball"],
+            "context": ["sports"]
+        },
+        {
+            "tag": "war_movies",
+            "patterns": ["War films", "Best military movies", "What are some good war movies?"],
+            "responses": ["Here are some impactful war films: \n- Saving Private Ryan\n- 1917\n- Dunkirk"],
+            "context": ["war"]
+        },
+        {
+            "tag": "based_on_books",
+            "patterns": ["Movies based on books", "Book adaptations", "Best films from novels"],
+            "responses": ["These movies are based on great books: \n- The Great Gatsby\n- The Hunger Games\n- To Kill a Mockingbird"],
+            "context": ["book_adaptations"]
+        },
+        {
+            "tag": "time_travel_movies",
+            "patterns": ["Time travel films", "Movies about time travel", "Best time-bending movies"],
+            "responses": ["Experience time travel with these films: \n- Back to the Future\n- The Butterfly Effect\n- Looper"],
+            "context": ["time_travel"]
+        },
+        {
+            "tag": "space_movies",
+            "patterns": ["Space exploration movies", "Movies set in space", "Best outer space films"],
+            "responses": ["Embark on a journey with these space movies: \n- Gravity\n- 2001: A Space Odyssey\n- The Martian"],
+            "context": ["space"]
+        },
+        {
+            "tag": "crime_movies",
+            "patterns": ["Crime films", "Best crime movies", "Movies about criminals"],
+            "responses": ["Dive into the underworld with these crime movies: \n- The Godfather\n- Goodfellas\n- Heat"],
+            "context": ["crime"]
+        },
+        {
+            "tag": "adventure_movies",
+            "patterns": ["Adventure films", "Best adventure movies", "Exciting movies to watch"],
+            "responses": ["Embark on an adventure with these movies: \n- Indiana Jones Series\n- The Revenant\n- Jumanji"],
+            "context": ["adventure"]
+        },
+        {
+            "tag": "historical_movies",
+            "patterns": ["Historical films", "Movies about history", "Best period dramas"],
+            "responses": ["Travel back in time with these historical films: \n- Schindler's List\n- Braveheart\n- The King's Speech"],
+            "context": ["historical"]
+        },
+        {
+            "tag": "feel_good_movies",
+            "patterns": ["Feel-good films", "Uplifting movies", "Happy movies to watch"],
+            "responses": ["Brighten your day with these feel-good movies: \n- The Pursuit of Happyness\n- Little Miss Sunshine\n- Chef"],
+            "context": ["feel_good"]
+        },
+        {
+            "tag": "post_apocalyptic_movies",
+            "patterns": ["Post-apocalyptic films", "Movies about the apocalypse", "Best dystopian films"],
+            "responses": ["Explore dystopian worlds with these movies: \n- The Road\n- Mad Max: Fury Road\n- Children of Men"],
+            "context": ["post_apocalyptic"]
+        },
+        {
+            "tag": "robot_movies",
+            "patterns": ["Movies about robots", "Robot films", "Best AI-themed movies"],
+            "responses": ["Explore the world of AI with these films: \n- Ex Machina\n- WALL-E\n- I, Robot"],
+            "context": ["robots"]
+        },
+        {
+            "tag": "animated_classics",
+            "patterns": ["Classic animated movies", "Best old animation", "Timeless animated films"],
+            "responses": ["Enjoy these classic animated films: \n- Snow White and the Seven Dwarfs\n- Bambi\n- Dumbo"],
+            "context": ["animated_classics"]
+        },
+        {
+            "tag": "dark_comedies",
+            "patterns": ["Dark comedy films", "Best dark comedies", "Movies with dark humor"],
+            "responses": ["Laugh and cringe with these dark comedies: \n- Fargo\n- In Bruges\n- Burn After Reading"],
+            "context": ["dark_comedy"]
+        },
+        {
+            "tag": "food_movies",
+            "patterns": ["Movies about food", "Best foodie films", "Films featuring chefs"],
+            "responses": ["Savor these foodie films: \n- Ratatouille\n- Julie & Julia\n- Chef"],
+            "context": ["food"]
+        },
+        {
+            "tag": "courtroom_movies",
+            "patterns": ["Courtroom dramas", "Best legal films", "Movies about lawyers"],
+            "responses": ["Engage with these courtroom dramas: \n- A Few Good Men\n- 12 Angry Men\n- The Lincoln Lawyer"],
+            "context": ["courtroom"]
+        }
+          
+    ]
+  }
