@@ -12,7 +12,16 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model  # type: ignore
 
 
+ # Define the image path using a raw string
+    image_path('bot_image.jpg')   # Use raw string
+    
 
+    # Add an image in the first column
+    with col1:
+        if os.path.exists(image_path):
+            st.image(image_path, use_container_width=250)
+        else:
+            st.error("Image file not found. Please check the path.")
 
 # Import your sections
 
