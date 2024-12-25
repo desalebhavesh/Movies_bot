@@ -22,8 +22,8 @@ def home_section():
 
     # Add an image in the first column
     with col1:
-        if os.path.exists(st.image):
-            st.image(st.image, use_container_width=True)
+        if os.path.exists(image_path):
+            st.image(image_path, use_container_width=250)
         else:
             st.error("Image file not found. Please check the path.")
 
