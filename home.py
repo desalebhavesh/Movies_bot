@@ -17,7 +17,7 @@ def home_section():
     col1, col2 = st.columns([1, 3])
 
     # Define the image path using a raw string
-    st.image('bot_image.jpg')   # Use raw string
+    image_path('bot_image.jpg')   # Use raw string
     
 
     # Add an image in the first column
