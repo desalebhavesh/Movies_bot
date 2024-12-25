@@ -10,10 +10,7 @@ def chat_with_bot():
     if user_input:
         st.write(f"🔍 Searching for movies related to: {user_input}")
 
-with col2:
-        # Optional: Add a health-related image or icon
-        st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fbot&psig=AOvVaw33YQSiYML_Ie8nIYcDrEn_&ust=1735208801231000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKihnNrawooDFQAAAAAdAAAAABAE", width=250)
-    
+
 
 # Home page function
 def home_section():
