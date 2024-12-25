@@ -12,7 +12,7 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model  # type: ignore
 
 
-st.image('bot_image.jpg')
+
 
 # Import your sections
 
