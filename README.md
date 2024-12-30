@@ -1,7 +1,8 @@
 🎥 Movie Bot 🤖
+
 Welcome to Movie Bot, a conversational AI-powered chatbot designed to assist you with all things related to movies! From trending movies to specific queries about Bollywood, Hollywood, or South movies, this bot has you covered.
 
-🌐 Try it here: Movie Bot
+🌐 Try it here:https://moviesbot.streamlit.app/
 
 🚀 Features
 Movie Chatbot: Ask questions like "Trending movies" or "Tell me about Inception."
