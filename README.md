@@ -48,8 +48,6 @@ No need to run locally? Visit the live app:
 🤝 Contributions:-
 Feel free to fork and contribute to this project. Pull requests are always welcome!
 
-🏆 Acknowledgments:-
-Inspired by ChatGPT
 
 📞 Contact
 For any inquiries, feel free to reach out at [bhaveshdesale7588@gmail.com].
