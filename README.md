@@ -6,9 +6,13 @@ Welcome to Movie Bot, a conversational AI-powered chatbot designed to assist you
 
 🚀 Features
 Movie Chatbot: Ask questions like "Trending movies" or "Tell me about Inception."
+
 User Authentication: Register and log in to access the bot.
+
 Dynamic Navigation: Explore sections like Home, About, Chat History, and Social Links.
+
 NLP-Powered: Leveraging a pre-trained TensorFlow model for intelligent responses.
+
 Simple and Intuitive UI: Built with Streamlit for a clean and modern interface.
 
 🛡️ Dependencies
@@ -21,15 +25,20 @@ Bcrypt: For secure user authentication.
 Highlight the tech stack in a more organized way:
 
 Frontend: Streamlit
+
 Backend: TensorFlow, NLTK
+
 Hosting: Streamlit Cloud
+
 Authentication: bcrypt
 
 🤖 Chatbot Capabilities
 Showcase the kinds of queries your bot can handle, like:
 
 "Trending movies" → Lists the latest popular movies.
+
 "Tell me about Interstellar" → Provides details of the movie.
+
 "Recommend South movies" → Suggests regional content.
 
 6️⃣ Access the Hosted Version:-
